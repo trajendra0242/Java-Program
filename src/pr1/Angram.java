@@ -1,0 +1,56 @@
+import java.util.Arrays;
+class Angram {
+	/*public static void main(String []args){
+		String s1="aab";
+		String s2="baa";
+		int []arr=new int [256];
+		for (int i=0;i<s1.length() ;i++ )
+		{
+		//	System.out.print(s1.charAt(i)+" ");
+			arr[s1.charAt(i)]++;
+			System.out.print(arr[s1.charAt(i)]++ +" ");	
+			arr[s2.charAt(i)]--;
+			System.out.print(arr[s2.charAt(i)]-- +" ");	
+		}
+		boolean flag=false;
+		for (int i=0;i<arr.length ;i++ )
+		{
+			if (arr[i]==0)
+			{
+				flag=true;
+			}		
+		}
+		if (flag)
+		{
+			System.out.println("Angram");
+		} else{
+			System.out.println("Not a angram");
+		}
+	} 
+	*/
+	public static void main(String [] args){
+		String str1="Race";
+		String str2="Carge";
+
+		str1=str1.toLowerCase();
+		str2=str2.toLowerCase();
+		if (str1.length()==str2.length())
+		{
+			char []ch1=str1.toCharArray();
+			char []ch2=str2.toCharArray();
+			Arrays.sort(ch1);
+			Arrays.sort(ch2);
+			boolean res=Arrays.equals(ch1,ch2);
+			if (res)
+			{
+				System.out.println("Angram");
+			} else{
+				System.out.println("Not Angram");
+			} 
+		} else {
+			System.out.println("Not angram");
+		}
+	}
+
+	
+}`

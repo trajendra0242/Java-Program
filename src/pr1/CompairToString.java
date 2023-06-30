@@ -1,0 +1,42 @@
+class CompairToString {
+	public static void main(String []args){
+		String str1="Rajendra";
+		String str2="Rajendra";
+		/*		if (str1===str2)
+		{
+			System.out.println("equals");
+		} else {
+			System.out.println("Not a equeals");
+		}
+	*/	
+		boolean flag=false;
+		char [] arr1=str1.toCharArray();
+		char [] arr2=str2.toCharArray();
+		if (str1.length()==str2.length())
+
+		{
+			for (int i=0;i<arr1.length ;i++ )
+			{
+				if (arr1[i]==arr2[i])
+				{
+					flag=true;
+
+				}
+				else{
+					flag=false;
+					break;
+				}/		
+			}
+			if (flag)
+			{
+				System.out.println("Both string are equal");
+			} else{
+				System.out.println("Both string are not equal.");
+			}
+		} else{
+			System.out.println("Both string are not equal.");
+		}
+		
+		
+	}
+}

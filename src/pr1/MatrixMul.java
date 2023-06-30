@@ -1,0 +1,34 @@
+class MatrixMul {
+	public static void main(String []args) {
+		int m1[][]={{1,1,1},
+					{2,2,2},
+					{3,3,3}};
+
+		int m2[][]={{1,1,1},
+					{2,2,2},
+					{3,3,3}};
+
+		int mul[][]=new int[3][3];
+
+		for (int i=0;i<3 ;i++ )
+		{
+			for (int j=0;j<3 ;j++ )
+			{
+				for (int k=0;k<3 ; k++)
+				{
+					mul[i][j]+=m1[i][k]*m2[k][j];
+				}
+			}
+		}
+
+		for (int i=0;i<3 ;i++ )
+		{
+			for (int j=0;j<3 ;j++ )
+			{
+				System.out.print(mul[i][j]+" ");
+			}
+			System.out.println();
+		}
+
+	}
+}
