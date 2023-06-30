@@ -1,0 +1,18 @@
+package day1;
+import java.util.Scanner;
+class Prt_M{
+	public static void prt(int p,int r,int a){
+			double res=(p*r*a)/100;
+			System.out.println("Simple intarest ="+res);	
+		}
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+			System.out.println("Enter the principle: ");
+			int p=sc.nextInt();
+			System.out.println("Enter the Rate: ");
+			int r=sc.nextInt();
+			System.out.println("Enter the Ammount: ");
+			int a=sc.nextInt();
+			prt(p,r,a);
+	}
+}

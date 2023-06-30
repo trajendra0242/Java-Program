@@ -1,0 +1,70 @@
+package day1;
+import java.util.Scanner;
+class Month1_M
+{	
+	public static void month(int ch){
+		switch (ch)
+		{
+		case 1:{
+			System.out.println("Jan");
+		}
+		break;
+		case 2:{
+			System.out.println("Feb");
+		}
+		break;
+		case 3:{
+			System.out.println("March");
+		}
+		break;
+		case 4:{
+			System.out.println("April");
+		}
+		break;
+		case 5:{
+			System.out.println("May");
+		}
+		break;
+		case 6:{
+			System.out.println("Jun");
+		}
+		break;
+		case 7:{
+			System.out.println("July");
+		}
+		break;
+		case 8:{
+			System.out.println("Aug");
+		}
+		break;
+		case 9:{
+			System.out.println("Sup");
+		}
+		break;
+		case 10:{
+			System.out.println("Octo");
+		}
+		break;
+		case 11:{
+			System.out.println("Nov");
+		}
+		break;
+		case 12:{
+			System.out.println("Dec");
+		}
+		break;
+		default:{
+			System.out.println("Invalid choise");
+		}
+		}
+	}
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the no of month: ");
+		/*System.out.println("\n1.Jan \n2.Feb \n3.March \n4.April \n5.May \n6.Jun \n7.July \n8.Aug \n9.Sup \n10.Octo  \n11.Nov \n12.Des");*/
+		int ch=sc.nextInt();
+		month(ch);
+		
+	}
+}
