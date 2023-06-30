@@ -1,0 +1,16 @@
+package day2;
+
+class DigitalProduct{
+	public static void digitalPro(int no){
+		int pro=1;
+		for(int i=no;i>=1;i=i/10){
+			int rem=i%10;
+			pro*=rem;
+		}
+		System.out.println("Digital Product="+pro);
+	}
+	public static void main(String [] args){
+		int no=1243;
+		digitalPro(no);
+	}
+}

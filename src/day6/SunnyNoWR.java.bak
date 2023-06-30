@@ -1,0 +1,28 @@
+package day6;
+class SunnyNoWR {
+	public static void main(String []args){
+		int no1=1;
+		int no2=100;
+		System.out.println("******All Sunny No 1 to 100*******");
+		for (int i=no1;i<=no2 ;i++ )
+		{
+			if(psqure(i+1)){
+				System.out.println(i);
+			} 
+		}
+		
+	}
+	public static boolean psqure(int n){
+		boolean flag=true;
+		for (int i=1;i<=n ;i++ )
+		{
+			if (i*i==n)
+			{
+				return flag;
+				
+			} 
+		}
+		return flag=false;
+
+	}
+}
