@@ -1,0 +1,17 @@
+package day9;
+class CountWStartWV {
+
+	public static void main(String []args){
+		String str="Hello I am Rajendra";
+		int count=0;
+		String str1=str.toUpperCase();
+		for (String word:str1.split(" ") )
+		{
+			if (charAt(0).toLowerCase())
+			{
+			}			
+		}
+		System.out.println(count);
+		
+	}
+}

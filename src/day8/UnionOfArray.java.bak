@@ -1,0 +1,20 @@
+package day8;
+import java.util.HashSet;
+class UnionOfArray {
+	public static void main(String []args){
+		
+		int arr1[]={122,1,2,3,5,7};
+		int arr2[]={4,2,6,1,3};
+		HashSet<Integer>sc=new HashSet<Integer>();
+		for (int i=0;i<arr1.length || i<arr2.length ;i++ )
+		{
+				sc.add(arr1[i]);			
+				sc.add(arr2[i]);		
+		}
+		for (int arr :sc )
+		{
+			System.out.print(arr+" ");
+		}
+
+	}
+}

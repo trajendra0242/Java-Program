@@ -1,0 +1,61 @@
+package pattern;
+import java.util.Scanner;
+class PP{
+	public static void main(String []args){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the no!");
+		int n=sc.nextInt();
+		//int n=10;
+		for (int i=1;i<=n/2 ;i++ )
+		{
+			for (int j=1;j<=n-i ;j++ )
+			{
+				System.out.print(" ");
+			}
+			for (int k=1;k<=i ;k++ )
+			{
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+		for (int i=1;i<=n/2 ;i++ )
+		{
+			
+			for (int j=1;j<=n/2-i ;j++ )
+			{
+				System.out.print(" ");
+			}
+			for (int k=1;k<=i ;k++ )
+			{
+				System.out.print("* ");
+			}
+	
+			for (int j=1;j<=n/2-i ;j++ )
+			{
+				System.out.print("  ");
+			}
+			for (int k=1;k<=i ;k++ )
+			{
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+		
+		
+	}
+}
+
+/*
+
+         *
+        * *
+       * * *
+      * * * *
+     * * * * *
+    *         *
+   * *       * *
+  * * *     * * *
+ * * * *   * * * *
+* * * * * * * * * *
+
+*/

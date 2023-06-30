@@ -1,0 +1,9 @@
+package day9;
+class CapitaliesChar {
+	public static void main(String [] args) {
+		String str="hello i am rajendra";
+		String str1=str.toUpperCase();
+		System.out.println(str1);
+		
+	}
+}

@@ -1,0 +1,9 @@
+package day11;
+class ArrayIndexOutE
+{
+	public static void main(String []args){
+		int arr[]={1,2,3};
+		arr[4]=4;
+	}
+	
+}

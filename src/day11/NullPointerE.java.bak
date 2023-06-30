@@ -1,0 +1,9 @@
+package day11;
+class NullPointerE {
+	public static void main(String []args){
+		String s=null;
+		s.toUpperCase();
+		//System.out.println(s.toUpperCase());
+	}
+	
+}

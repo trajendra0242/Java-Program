@@ -1,0 +1,92 @@
+package day12;
+import java.util.*;
+
+class Laptop implements Comparable{
+	String brand;
+	int ssd;
+	int ram;
+	int price;
+	Laptop(String brand, int ssd,int ram,int price){
+		this.brand=brand;
+		this.ssd=ssd;
+		this.ram=ram;
+		this.price=price;
+	}
+	@Override
+		public String toString(){
+			return "Brand"+brand+"SSD"+ssd+"RAM"+ram+"Price"+price;
+		}
+	@Override
+		public int hashCode(){
+			return brand.hashCode()+((Integer)ssd).hashCode()+((Integer)ram).hashCode()+((Integer)price).hashCode();
+		}
+	@Override
+		public boolean equals(Object o){
+			Laptop lp=(Laptop)o;
+			if (this.brand==lp.brand && this.ssd==lp.ssd && this.ram==lp.ram && this.price==lp.price)
+			{
+				return true;
+			}
+			return false;
+		}
+
+
+class SsdComparable implements Comparable {
+	public int compareTo(Object o) {
+	Laptop temp = (Laptop) o ;
+		if (this.ssd > temp.ssd )
+		{
+			return 1 ;
+		}
+		if (this.ssd < temp.ssd)
+		{
+			return -1 ;
+		}
+		return 0 ;
+	}
+}
+class RamComparable implements Comparable {
+	public int compareTo(Object o) {
+	Laptop temp = (Laptop) o ;
+		if (this.ram > temp.ram )
+		{
+			return 1 ;
+		}
+		if (this.ram < temp.ram)
+		{
+			return -1 ;
+		}
+		return 0 ;
+	}
+}
+class PriComparable implements Comparable {
+	public int compareTo(Object o) {
+	Laptop temp = (Laptop) o ;
+		if (this.price > temp.price )
+		{
+			return 1 ;
+		}
+		if (this.price < temp.price)
+		{
+			return -1 ;
+		}
+		return 0 ;
+	}
+}
+}
+
+
+class LaptopObjectCom {
+	public static void main(String []args) {
+		ArrayList al=new ArrayList();
+		al.add(new Laptop("DELL",8,250,50000));
+		al.add(new Laptop("HP",6,150,30000));
+		al.add(new Laptop("LENOVO",8,250,50000));
+		al.add(new Laptop("APPLE",8,250,100000));
+		Collections.sort(al,new PriComparable());
+		for (Object o:al )
+		{
+			System.out.println(o);
+		}
+	}
+}

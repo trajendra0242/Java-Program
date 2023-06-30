@@ -1,0 +1,23 @@
+package day8;
+class ReplaceArray {
+	public static void main(String []args){
+		int arr[]={1,2,3,4};
+		int key=5;
+		int ind=2;
+		for (int i=0;i<arr.length ;i++ )
+		{
+			System.out.println(arr[i]);
+		}
+		for (int i=0;i<arr.length ;i++ )
+		{
+			if (ind==i)
+			{
+				arr[i]=key;
+			}
+		}
+		for (int i=0;i<arr.length ;i++ )
+		{
+			System.out.println(arr[i]);
+		}
+	}
+}

@@ -1,0 +1,13 @@
+package day10;
+class SwapSWUT {
+	public static void main(String []args){
+		String s1="Rajendra";
+		String s2="Amol";
+		s2=s1.concat(s2);
+		s1=s2.substring(8);
+		s2=s2.substring(0,8);
+		System.out.println(s1);
+		System.out.println(s2);
+
+	}
+}
